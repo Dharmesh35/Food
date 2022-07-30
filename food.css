@@ -1,0 +1,815 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family:'Raleway-Medium.ttf' ;
+    src: url(Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family:'Cookie-Regular.ttf' ;
+    src: url(Cookie-Regular.ttf);
+}
+
+@font-face {
+    font-family:'Satisfy-Regular.ttf' ;
+    src: url(Satisfy-Regular.ttf);
+}
+
+#first
+{
+    background: url(res.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#logo
+{
+    font-family:'Cookie-Regular.ttf' ;
+    display: inline-flex;
+    color: white;
+    font-size: 90px;
+    letter-spacing: 3px;
+    margin-left: -900px;    
+}
+#logo h5
+{
+    font-family:'Raleway-Medium.ttf' ;
+    font-size: 15px;
+    margin-top: 60px;
+    margin-left: -130px;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#logo:hover h5
+{
+    margin-top: 75px;
+    opacity: 1;
+}
+nav 
+{
+    margin-left: 60%;
+    padding-top:5px;
+    padding-bottom: 10px;
+    margin-right: 5%;
+    font-size: 20px;
+    display:flex;
+    align-items: center; 
+    justify-content: space-between;  
+    z-index: 1;
+}
+nav ul li
+{
+    list-style: none ;
+    display: inline-flex;
+    margin-left :100px;
+}
+
+.link
+{
+    text-decoration: none;
+    font-family:'Raleway-Medium.ttf' ;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    border-style: hidden;
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+.link:hover
+{
+    opacity: 1;
+    border: 1px solid white;
+
+}
+
+
+#quote
+{
+    font-family:'Satisfy-Regular.ttf' ;
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    line-height: 145px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    width:620px;
+    height:auto;
+    margin-top: 150px;
+    margin-left:35% ;
+    padding-bottom: 240px;
+    transition: 0.5s ease;
+}
+#quote:hover
+{
+    font-size: 130px;
+    text-shadow: 2px 2px 4px;
+}
+#attract
+{
+    font-family:'Raleway-Medium.ttf' ;
+    color: white;
+    text-align: center;
+    padding-top: -80px;
+    font-size: large;
+    padding-left: 5%;
+    padding-bottom: 40px;
+}
+
+#second
+{
+    display: inline-flex;
+    font-family:'Raleway-Medium.ttf' ;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 300px;
+    background: url(dish.jpg);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: static;
+}
+
+#a
+{
+    width: 360px;
+    height: 435px;
+    padding: 30px;
+    line-height: 40px;
+    list-style: none ;
+    margin: 100px;
+    margin-left: 120px; 
+    text-align: justify;
+    overflow: scroll;
+    border: solid 2px;
+    transition: 0.3s ease-in;
+    /* background-color: aqua; */
+}
+
+
+#b
+{
+    width: 360px;
+    height: 435px;
+    line-height: 40px;
+    padding: 30px;
+    border: solid 2px;
+    text-align:justify ;
+    overflow: scroll;
+    margin: 100px;
+    /* background-color: aquamarine; */
+    list-style: none ;
+}
+#c
+{
+    width: 360px;
+    height: 435px;
+    line-height: 40px;
+    padding: 30px;
+    margin: 100px;
+    text-align: justify;
+    overflow: scroll;
+    border: solid 2px;
+    /* background-color: bisque; */
+    list-style: none ;
+}
+
+::-webkit-scrollbar {
+    width: 0.5px;
+  }
+#head
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.starter
+{
+    font-family:'Raleway-Medium.ttf' ;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+.starter:hover
+{
+    font-size:17px ;
+}
+
+h1
+{
+    margin-top: 180px;
+    font-size: 45px;
+    margin-left: 600px;
+    padding-right: 100px;
+    font-family:'Raleway-Medium.ttf' ;
+}
+
+#para
+{
+    margin-top: 40px;
+    font-family:'Raleway-Medium.ttf' ;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 35px;
+    margin-left: 600px;
+    padding-top: 50px;
+    text-align: justify;
+    padding-right: 100px;
+
+}
+#chef
+{
+    margin-top: 8px;
+    width: 340px;
+    float: left;
+    margin-left: 120px;
+    filter: grayscale(50%);
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 1px burlywood;
+    transition: 0.5s ease;
+}
+
+#chef:hover
+{
+    width: 350px;
+    box-shadow: 10px 10px 10px burlywood;
+}
+
+#rest
+{
+    margin-top: 130px;
+    width: 550px;
+    float: right;
+    margin-right: 120px;
+    filter: grayscale(50%);
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 1px burlywood;
+    transition: 0.5s ease;
+}
+
+#rest:hover
+{
+    width: 560px;
+    box-shadow: 10px 10px 10px burlywood;
+}
+#para1
+{
+    margin-top: 140px;
+    font-family:'Raleway-Medium.ttf' ;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 35px;
+    margin-left: 120px;
+    padding-top: 30px;
+    text-align: justify;
+    margin-right: 780px;
+}
+
+#fourth
+{
+    background-color: rgba(0, 0, 0, 0.948);
+    width: 100%;
+    height:25pc;
+    margin-top: 150px;
+    color: white;
+    display:inline-flex;
+    
+}
+#head1
+{
+    font-family:'Raleway-Medium.ttf' ;
+    text-align: center;
+    font-size: 45px;
+    padding-left: 30px;
+    padding-top: 160px;
+    padding-right: 30px;
+    transition: 0.5s ease;
+}
+#head1:hover
+{
+    color:rgb(43, 226, 171) ;
+}
+#x
+{
+    width: 360px;
+    height: 250px;
+    padding: 30px;
+    list-style: none ;
+    font-family:'Raleway-Medium.ttf' ;
+    margin: 60px;
+    margin-left: 50px; 
+    text-align: center;
+}
+#y
+{
+    width: 360px;
+    height: 250px;
+    padding: 30px;
+    list-style: none ;
+    font-family:'Raleway-Medium.ttf' ;
+    margin: 60px;
+    margin-left: 50px; 
+    text-align: center;
+}
+#z
+{
+    width: 360px;
+    height: 250px;
+    padding: 30px;
+    list-style: none ;
+    font-family:'Raleway-Medium.ttf' ;
+    margin: 60px;
+    margin-left: 50px; 
+    text-align: center;
+}
+
+#fiveth
+{
+    background-color: rgba(0, 0, 0, 0.948);
+    width: 100%;
+    height:300;
+}
+#credit
+{
+    display: inline-flex;
+    padding: 25px;
+    font-family:'Raleway-Medium.ttf' ;
+    list-style: none;
+}
+.credit
+{
+    color: white;
+    text-decoration: none;
+    padding-left: 250px;
+    transition: 0.5s ease;
+
+}
+.credit:hover
+{
+    color: rgb(43, 226, 171);
+}
+
+@media screen and (max-width: 1449px) 
+{
+#logo
+{
+    margin-left: -800px;    
+}
+
+#a
+{
+    width: 360px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 120px; 
+}
+
+
+#b
+{
+    width: 360px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+}
+#c
+{
+    width: 360px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+}
+
+span 
+{
+    display: none;
+}
+
+#para1
+{
+    margin-top: 98px;
+}
+#para
+{
+    margin-top: 30px;
+    padding-top: 0px;
+
+}
+.credit
+{
+    padding-left: 180px;
+}
+
+}
+
+@media screen and (max-width: 1025px) 
+{
+#logo
+{
+    margin-left: -550px;    
+}
+
+nav ul li
+{
+    margin-left :20px;
+}
+
+#quote
+{
+    margin-left:21% ;
+    padding-bottom: 160px;
+}
+#a
+{
+    width: 460px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 50px; 
+}
+
+
+#b
+{
+    width: 560px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 50px;
+}
+#c
+{
+    width: 460px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 50px;
+}
+h1 
+{
+    margin-top: 180px;
+    margin-left: 530px;
+}
+#para
+{
+    margin-top: 10px;
+    line-height: 30px;
+    margin-left: 530px;
+    padding-top: 10px;
+    padding-right: 40px;
+
+}
+span 
+{
+    display: none;
+}
+
+#rest
+{
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+#para1
+{
+    margin-top: 100px;
+    line-height: 30px;
+    margin-left: 50px;
+    padding-top: 30px;
+    margin-right: 640px;
+}
+
+#x
+{
+    width:460px;
+    height:290px;
+    padding: 0px;
+    margin: 60px;
+    margin-left: 50px; 
+}
+#y
+{
+    width: 360px;
+    height: 290px;
+    padding: 0px;
+    margin: 60px;
+    margin-left: 50px; 
+}
+#z
+{
+    width: 360px;
+    height: 290px;
+    padding: 0px;
+    margin: 60px;
+    margin-left: 50px; 
+}
+.credit
+{
+    padding-left: 80px;
+}
+
+}
+
+@media screen and (max-width: 769px) 
+{
+    #logo
+{
+    margin-left: -410px;    
+}
+
+nav ul li
+{
+    margin-left :0px;
+}
+
+#quote
+{
+    margin-left:13% ;
+    padding-bottom: 160px;
+}
+#quote:hover{
+    font-size: 110px;
+}
+
+#second
+{
+    display: block;
+    font-size: 35px;
+    overflow: scroll;
+    padding-bottom: 10px;
+}
+#a
+{
+    width: 460px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 150px; 
+}
+
+
+#b
+{
+    width: 460px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 150px;
+}
+#c
+{
+    width: 460px;
+    height: 435px;
+    padding: 30px;
+    margin: 100px;
+    margin-left: 150px;
+}
+#chef
+{
+    float: none;
+    margin-left: 200px;
+}
+h1 
+{
+    margin-top: 10px;
+    margin-left: 200px;
+}
+#para
+{
+    margin-top: 10px;
+    line-height: 30px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+
+}
+span 
+{
+    display: none;
+}
+
+#rest
+{
+    margin-right: 0px;
+    float: none;
+    width: 700px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+#para1
+{
+    margin-top: 40px;
+    line-height: 30px;
+    margin-left: 40px;
+    padding-top: 10px;
+    margin-right: 40px;
+}
+#fourth
+{
+    height:37pc;
+    margin-top: 50px;
+    color: white;
+    display:block;
+    
+}
+
+#head1
+{
+    font-size: 45px;
+    padding-left: 45px;
+    padding-top: 20px;
+}
+#x
+{
+    width:660px;
+    height:150px;
+    padding: 0px;
+    margin: 30px;
+    margin-left: 50px; 
+}
+#y
+{
+    width: 660px;
+    height: 120px;
+    padding: 0px;
+    margin: 30px;
+    margin-left: 50px; 
+}
+#z
+{
+    width: 660px;
+    height: 120px;
+    padding: 0px;
+    margin: 30px;
+    margin-left: 50px; 
+}
+.credit
+{
+    padding-left: 30px;
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 426px) 
+{
+    #logo
+    {
+        margin-left: -90px;   
+        font-size: 60px; 
+    }
+    nav
+    {
+        display: block;
+    }
+    nav ul li
+    {
+        margin-left :10px;
+        font-size:17px ;
+        margin-top:0px;
+    }
+    
+    #quote
+    {
+        margin-left:-20% ;
+        font-size: 80px;
+        padding-bottom: 160px;
+    }
+    #quote:hover{
+        font-size: 81px;
+    }
+    
+    #second
+    {
+        display: block;
+        font-size: 35px;
+        overflow: scroll;
+        padding-bottom: 10px;
+    }
+    #a
+    {
+        width: 360px;
+        height: 435px;
+        padding: 30px;
+        margin: 100px;
+        margin-left: 35px; 
+    }
+    
+    
+    #b
+    {
+        width: 360px;
+        height: 435px;
+        padding: 30px;
+        margin: 100px;
+        margin-left: 35px;
+    }
+    #c
+    {
+        width: 360px;
+        height: 435px;
+        padding: 30px;
+        margin: 100px;
+        margin-left: 35px;
+    }
+    #chef
+    {
+        float: none;
+        width: 250px;
+        margin-left: 80px;
+    }
+    h1 
+    {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    #para
+    {
+        margin-top: 10px;
+        line-height: 30px;
+        margin-left: 40px;
+        padding-top: 10px;
+        padding-right: 40px;
+    
+    }
+    span 
+    {
+        display: none;
+    }
+    
+    #rest
+    {
+        margin-right: 0px;
+        float: none;
+        width: 350px;
+        margin-left: 40px;
+        margin-bottom: 0px;
+    }
+    
+    #para1
+    {
+        margin-top: 40px;
+        line-height: 30px;
+        margin-left: 40px;
+        padding-top: 10px;
+        margin-right: 40px;
+    }
+    #fourth
+    {
+        height:37pc;
+        margin-top: 50px;
+        color: white;
+        display:block;
+        
+    }
+    
+    #head1
+    {
+        font-size: 45px;
+        padding-left: 45px;
+        padding-top: 20px;
+    }
+    #x
+    {
+        width:360px;
+        height:150px;
+        padding: 0px;
+        margin: 30px;
+        margin-left: 35px; 
+    }
+    #y
+    {
+        width: 360px;
+        height: 120px;
+        padding: 0px;
+        margin: 30px;
+        margin-left: 35px; 
+    }
+    #z
+    {
+        width: 360px;
+        height: 120px;
+        padding: 0px;
+        margin: 30px;
+        margin-left: 35px; 
+    }
+    .credit
+    {
+        padding-left: 30px;
+        font-size: 15px;
+    }
+    #credit
+    {
+        display: block;
+    }
+}
